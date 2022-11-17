@@ -1,7 +1,10 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 
-import App from './01-class的组件/01-class组件'; // 引用导用的类
+// 导入的组件是首字母大写的形式 - react会识别是其组件，而非本事的组件
+// import App from './01-base/01-class组件.js'; // 引用导用的类
+import App from './01-base/02- 函数式组件'; // 引用导用的类
+
 
 // jxs = js + xml;
 // jxs使用react构造组件，babel进行编译 》 js对象 》 ReactDom.render() 》DOM元素
