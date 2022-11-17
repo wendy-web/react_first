@@ -3,7 +3,9 @@ import ReactDom from 'react-dom';
 
 // 导入的组件是首字母大写的形式 - react会识别是其组件，而非本事的组件
 // import App from './01-base/01-class组件.js'; // 引用导用的类
-import App from './01-base/02- 函数式组件'; // 引用导用的类
+// import App from './01-base/02- 函数式组件';
+import App from './01-base/03-组件的嵌套';
+
 
 
 // jxs = js + xml;
