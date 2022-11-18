@@ -10,7 +10,8 @@ import ReactDom from 'react-dom';
 // import App from './01-base/05-事件处理_02';
 // import App from './01-base/05-事件处理_03';
 // import App from './01-base/07-ref';
-import App from './01-base/08-state';
+// import App from './01-base/08-state';
+import App from './01-base/09-列表渲染';
 
 
 
