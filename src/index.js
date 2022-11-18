@@ -5,9 +5,8 @@ import ReactDom from 'react-dom';
 // import App from './01-base/01-class组件.js'; // 引用导用的类
 // import App from './01-base/02- 函数式组件';
 // import App from './01-base/03-组件的嵌套';
-import App from './01-base/04-组件的样式';
-
-
+// import App from './01-base/04-组件的样式';
+import App from './01-base/05-事件处理';
 
 // jxs = js + xml;
 // jxs使用react构造组件，babel进行编译 》 js对象 》 ReactDom.render() 》DOM元素
