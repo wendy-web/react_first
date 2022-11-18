@@ -7,10 +7,16 @@ export default class App extends Component {
         super();
         this.inputRef = React.createRef();
         this.state = {
-            todoList: [{
+            todoList: [
+                {
                 id:0,
                 text: 'first to do list'
-            }]
+                },
+                {
+                    id:0,
+                    text: '<i>i标签的展示</i>'
+                }
+            ]
         }
     }
     render() {
@@ -26,7 +32,14 @@ export default class App extends Component {
                         this.state.todoList.map((item, index) => {
                             return (
                             <li ket={item.id}>
-                                {item.text}
+                                {/* {item.text} */}
+                                {/* 富文本的展示 */}
+                                <span dangerouslySetInnerHTML={
+                                    {
+                                        __html: item.text
+                                    }
+                                }>
+                                </span>
                                 <button onClick={ () => { this.delectHandle(index) }}>del</button>
                             </li>
                             );
