@@ -9,11 +9,11 @@ export default class App extends Component {
         this.state = {
             todoList: [
                 {
-                id:0,
-                text: 'first to do list'
+                    id:0,
+                    text: 'first to do list'
                 },
                 {
-                    id:0,
+                    id:1,
                     text: '<i>i标签的展示</i>'
                 }
             ]
