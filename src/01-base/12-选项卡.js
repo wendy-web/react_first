@@ -41,8 +41,8 @@ export default class App extends Component {
                     {
                         this.state.selList.map((item, index) => {
                             return  <li
-                            ket={item.id}
-                            className = {this.state.currentIndex === index && 'active'}
+                            key={item.id}
+                            className = {this.state.currentIndex === index ? 'active' : ''}
                             onClick={() => this.selClickHandle(index)}
                             >
                                 {item.text}
