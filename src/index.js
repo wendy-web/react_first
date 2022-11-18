@@ -7,7 +7,8 @@ import ReactDom from 'react-dom';
 // import App from './01-base/03-组件的嵌套';
 // import App from './01-base/04-组件的样式';
 // import App from './01-base/05-事件处理_01';
-import App from './01-base/05-事件处理_02';
+// import App from './01-base/05-事件处理_02';
+import App from './01-base/05-事件处理_03';
 
 
 // jxs = js + xml;
