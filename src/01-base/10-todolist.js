@@ -33,6 +33,8 @@ export default class App extends Component {
                         })
                     }
                 </ul>
+                {/* 条件渲染 */}
+                {this.state.todoList.length === 0 && <div>暂无代办事项....</div>}
             </div>
         );
     }
@@ -51,6 +53,9 @@ export default class App extends Component {
         this.setState({
             todoList
         });
+
+        // 清空输入框
+        this.inputRef.current.value = '';
     }
     // 删除的使用
     delectHandle = (index) => {
