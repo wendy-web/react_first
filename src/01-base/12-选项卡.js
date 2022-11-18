@@ -30,8 +30,7 @@ export default class App extends Component {
     }
     render() {
         return (
-            <div>
-                <p>选项卡的index： {this.state.currentIndex}</p>
+            <div className='contect_box'>
                 {/* <Film></Film>
                 <Cinema></Cinema>
                 <Center></Center> */}

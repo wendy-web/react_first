@@ -2,8 +2,11 @@
     margin: 0;
     padding: 0;
 }
+.contect_box {
+    padding-bottom: 40px;
+}
 ul {
-    position: absolute;
+    position: fixed;
     width: 100%;
     bottom: 0;
     background-color: gray;
