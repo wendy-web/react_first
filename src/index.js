@@ -31,10 +31,19 @@ import App from './01-base/16-navbar属性的使用';
 // );
 
 // react的严格模式,添加react.StrictMode的标签
-ReactDom.render(
-    // <React.StrictMode>
-        <App></App>
-    // </React.StrictMode>
-    ,
-    document.getElementById('root')
-);
+// ReactDom.render(
+//     // <React.StrictMode>
+//         <App></App>
+//     // </React.StrictMode>
+//     ,
+//     document.getElementById('root')
+// );
+
+
+//渲染App到页面
+import {
+    createRoot
+} from 'react-dom/client';
+const container = document.getElementById('root');
+const root = createRoot(container);
+root.render( <App/> );
