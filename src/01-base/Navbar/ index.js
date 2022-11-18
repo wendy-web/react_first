@@ -26,3 +26,10 @@ export default class Navbar extends Component {
 //     leftShow: wendyProtypes.bool,
 //     rightShow: wendyProtypes.bool
 // }
+
+// 属性加入默认值
+Navbar.defaultProps = {
+  title: '标签',
+  leftShow: true,
+  rightShow: true
+}

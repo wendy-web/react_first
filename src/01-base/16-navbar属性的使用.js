@@ -11,6 +11,8 @@ export default class App extends Component {
         <hr />
         <Navbar title="detail" rightShow={true}></Navbar>
         <hr />
+        <Navbar rightShow={true}></Navbar>
+
       </div>
     )
   }
