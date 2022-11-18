@@ -8,7 +8,9 @@ import ReactDom from 'react-dom';
 // import App from './01-base/04-组件的样式';
 // import App from './01-base/05-事件处理_01';
 // import App from './01-base/05-事件处理_02';
-import App from './01-base/05-事件处理_03';
+// import App from './01-base/05-事件处理_03';
+import App from './01-base/07-ref';
+
 
 
 // jxs = js + xml;
@@ -21,7 +23,11 @@ import App from './01-base/05-事件处理_03';
 //     document.getElementById('root')
 // );
 
+// react的严格模式,添加react.StrictMode的标签
 ReactDom.render(
-    <App></App>,
+    // <React.StrictMode>
+        <App></App>
+    // </React.StrictMode>
+    ,
     document.getElementById('root')
 );
