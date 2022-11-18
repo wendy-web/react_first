@@ -23,13 +23,21 @@ export default class App extends Component {
                 <ul>
                     {/* { renderList } */}
                     {
-                        this.state.todoList.map((item) => <li ket={item.id}>{item.text}</li>)
+                        this.state.todoList.map((item, index) => {
+                            return (
+                            <li ket={item.id}>
+                                {item.text}
+                                <button onClick={ () => { this.delectHandle(index) }}>del</button>
+                            </li>
+                            );
+                        })
                     }
                 </ul>
             </div>
         );
     }
-    addHandle = (event) => {
+    // 添加的元素
+    addHandle = () => {
         // 不要直接修改state的值
         // 可使用数组的解析[...], 或者使用slice()
         console.log(this.inputRef.current.value);
@@ -42,6 +50,15 @@ export default class App extends Component {
         ];
         this.setState({
             todoList
-        })
+        });
+    }
+    // 删除的使用
+    delectHandle = (index) => {
+        console.log("delext的index：", index);
+        const todoList = this.state.todoList.slice(); // 获取到一个新的数组的形式
+        todoList.splice(index, 1);
+        this.setState({
+            todoList
+        });
     }
 }
