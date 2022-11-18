@@ -12,6 +12,8 @@ export default class App extends Component {
         <Navbar title="detail" rightShow={true}></Navbar>
         <hr />
         <Navbar rightShow={true}></Navbar>
+        <Navbar { ...{title:"object的解析",rightShow:true}}></Navbar>
+
 
       </div>
     )
