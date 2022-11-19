@@ -38,6 +38,7 @@ class ItemDetail extends Component {
     this.state = {
       infoDetail: ''
     }
+    // 订阅者
     bus.subscribe((info) => {
       this.setState({
         infoDetail: info
@@ -58,7 +59,6 @@ export default class App extends Component {
         super()
         this.state = {
             filmList: [],
-            datailText: ''
         }
         axios.get('/list.json').then((res) => {
             console.log(res.data.data)
@@ -72,8 +72,6 @@ export default class App extends Component {
       <div>
         <p>
             父组件拿到自组件中点击的detail内容：
-            <br />
-            {this.state.datailText}
         </p>
         <p>中间人模式 --- 数据列表</p>
         {this.state.filmList.map((item) => {
