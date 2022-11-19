@@ -22,7 +22,9 @@ import ReactDom from 'react-dom';
 // import App from './01-base/21-受控cinema';
 // import App from './01-base/22-受控todolist';
 
-import App from './02-advanced/01-子传父';
+// import App from './02-advanced/01-子传父';
+import App from './02-advanced/02-非受控的选项卡';
+
 
 
 
