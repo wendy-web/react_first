@@ -11,7 +11,21 @@ export default class App extends Component {
         super();
         this.inputRef = React.createRef();
         this.state = {
-            currentIndex: 0
+            currentIndex: 0,
+            selList: [
+                {
+                    id:0,
+                    text: '电影'
+                },
+                {
+                    id:1,
+                    text: '影院'
+                },
+                {
+                    id:2,
+                    text: '我的'
+                }
+            ]
         }
     }
     render() {
@@ -27,10 +41,10 @@ export default class App extends Component {
                 {/* <Film></Film>
                 <Cinema></Cinema>
                 <Center></Center> */}
-
                 {this.whileComponent()}
                 <Tabbar
                     currentIndex={this.state.currentIndex}
+                    list = {this.state.selList}
                     event = {
                         (index) => {
                             this.setState({
