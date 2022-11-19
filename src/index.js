@@ -17,7 +17,9 @@ import ReactDom from 'react-dom';
 // import App from './01-base/15-betterScroll';
 // import App from './01-base/16-navbar属性的使用';
 // import App from './01-base/17-prop的函数式组件';
-import App from './01-base/19-非受控组件';
+// import App from './01-base/19-非受控组件';
+import App from './01-base/20-受控组件';
+
 
 
 
