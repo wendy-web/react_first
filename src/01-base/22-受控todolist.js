@@ -5,8 +5,8 @@ export default class App extends Component {
     constructor() {
         // constructor构造函数的使用，得加super实现继承
         super();
-        this.inputRef = React.createRef();
         this.state = {
+            inputValue: '',
             todoList: [
                 {
                     id:0,
@@ -20,10 +20,13 @@ export default class App extends Component {
         }
     }
     render() {
-        // const renderList = this.state.todoList.map((item) => <li>{item}</li>)
         return (
             <div>
-                <input type='text' placeholder='请输入内容' ref={this.inputRef}/>
+                <input type='text' placeholder='请输入内容' value={this.state.inputValue} onChange={(event) => {
+                    this.setState({
+                        inputValue: event.target.value
+                    })
+                }}/>
                 <button onClick={this.addHandle}>add</button>
                 <p>todoList的列表渲染 - 数组的map映射渲染</p>
                 <ul>
@@ -55,12 +58,11 @@ export default class App extends Component {
     addHandle = () => {
         // 不要直接修改state的值
         // 可使用数组的解析[...], 或者使用slice()
-        console.log(this.inputRef.current.value);
         const todoList = [
             ...this.state.todoList, 
             {
                 id: Math.random()*1000,
-                text: this.inputRef.current.value
+                text: this.state.inputValue
             }
         ];
         this.setState({
@@ -68,7 +70,9 @@ export default class App extends Component {
         });
 
         // 清空输入框
-        this.inputRef.current.value = '';
+        this.setState({
+            inputValue: ''
+        })
     }
     // 删除的使用
     delectHandle = (index) => {
