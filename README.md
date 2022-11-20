@@ -18,6 +18,8 @@ render：渲染，访问this.prop/state，
 componentDiMount： dom渲染完成
 
 运行阶段：
+UNSAFE_componentWillReceiveProps：最先获取父组件更改的属性的值
+shouldComponentUpdate: 返回false会阻止render的调用；可用于性能的提升
 componenWillUpdate：将要更新
 render：重新渲染
 componentDidUpdate：更新渲染完dom，可操纵dom
