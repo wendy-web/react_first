@@ -10,3 +10,16 @@ npm run start
 生命周期的节点
 React时期的版本的节点： 16.2 16.8 17；
 fiber的使用
+
+生命周期-----
+挂载阶段：
+componentWillUnmount： 将要挂载
+render：渲染，访问this.prop/state，
+componentDiMount： dom渲染完成
+
+运行阶段：
+componenWillUpdate：将要更新
+render：重新渲染
+componentDidUpdate：更新渲染完dom，可操纵dom
+
+销毁阶段：
