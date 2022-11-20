@@ -25,3 +25,4 @@ render：重新渲染
 componentDidUpdate：更新渲染完dom，可操纵dom
 
 销毁阶段：
+componentWillUnmonent：在组件的销毁之前进行清理，如：计时器和事件监听
