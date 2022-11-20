@@ -32,4 +32,6 @@ componentDidUpdate：更新渲染完dom，可操纵dom
 componentWillUnmonent：在组件的销毁之前进行清理，如：计时器和事件监听
 
 ## 新生命周期
-- getDerivedStateFromProps：
+
+- getDerivedStateFromProps：在数据的初始化与state的数据更新中调用
+- getSnapshotBeforeUpdate：获取更新之前的数据，比render相对较晚；return返回记录的数据；在componentDidUpdate中获取
