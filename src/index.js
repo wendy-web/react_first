@@ -2,7 +2,7 @@
  * @Author: wendy 463710868@qq.com
  * @Date: 2022-11-17 19:35:46
  * @LastEditors: wendy 463710868@qq.com
- * @LastEditTime: 2022-11-21 01:09:36
+ * @LastEditTime: 2022-11-21 01:22:52
  * @FilePath: /react_first_wendy/src/index.js
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -49,7 +49,9 @@ import ReactDom from 'react-dom';
 // import App from './02-advanced/17-更新阶段生命周期3';
 // import App from './02-advanced/19-销毁阶段生命周期';
 // import App from './02-advanced/20-新生命周期';
-import App from './02-advanced/22-新生命周期2';
+// import App from './02-advanced/22-新生命周期2';
+import App from './02-advanced/23-新生命周期-数据列表更新记录位置';
+
 
 // jxs = js + xml;
 // jxs使用react构造组件，babel进行编译 》 js对象 》 ReactDom.render() 》DOM元素
