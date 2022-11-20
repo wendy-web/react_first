@@ -35,3 +35,4 @@ componentWillUnmonent：在组件的销毁之前进行清理，如：计时器�
 
 - getDerivedStateFromProps：在数据的初始化与state的数据更新中调用
 - getSnapshotBeforeUpdate：获取更新之前的数据，比render相对较晚；return返回记录的数据；在componentDidUpdate中获取
+- PureComponent的优化；组件有个可直接代替使用
