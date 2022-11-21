@@ -2,7 +2,7 @@
  * @Author: wendy 463710868@qq.com
  * @Date: 2022-11-15 13:21:02
  * @LastEditors: wendy 463710868@qq.com
- * @LastEditTime: 2022-11-21 18:02:59
+ * @LastEditTime: 2022-11-21 18:21:12
  * @FilePath: /react_first_wendy/README.md
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -69,3 +69,5 @@ useLayoutEffect是生成dom的时机，可在此修改dom，避免渲染完后�
 ### useCallback（记忆函数）
 
 防止因为组件重新渲染，导致方法被重新创建，起到缓存的作用，只有第二个参数变化了，错重新声明一次
+
+### useMemo(记忆组件)：计算属性（componente）
