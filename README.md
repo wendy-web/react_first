@@ -1,3 +1,11 @@
+<!--
+ * @Author: wendy 463710868@qq.com
+ * @Date: 2022-11-15 13:21:02
+ * @LastEditors: wendy 463710868@qq.com
+ * @LastEditTime: 2022-11-21 17:40:39
+ * @FilePath: /react_first_wendy/README.md
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
 # first react 学习
 
 运行项目
@@ -46,3 +54,14 @@ componentWillUnmonent：在组件的销毁之前进行清理，如：计时器�
 函数式组件拥有自己的状态
 
 #### useState的使用
+
+### useEffect的使用
+
+- useEffect 依赖[]; 模拟componentDidMount(),只执行一次
+- useEffect 依赖[a,b]；模拟componentDidUpdate(),首次执行+更新执行；相当于vue的监听
+- useEffect return一个函数的调用；模拟componentWillUnMount；销毁时进行计时器与全局变量的清除
+
+### useEffect与useLayoutEffect的区别
+
+useEffect是dom完全渲染完成的时候执行，可能会出现页面抖动的情况；（推荐使用）
+useLayoutEffect是生成dom的时机，可在此修改dom，避免渲染完后再一次的修改，引起再次重绘/回流的损耗；（非必要不使用）
