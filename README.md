@@ -40,3 +40,9 @@ componentWillUnmonent：在组件的销毁之前进行清理，如：计时器�
 ### 书写组件的安装
 
 - npm i swiper
+
+### React Hooks
+
+函数式组件拥有自己的状态
+
+#### useState的使用

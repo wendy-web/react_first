@@ -2,7 +2,7 @@
  * @Author: wendy 463710868@qq.com
  * @Date: 2022-11-17 19:35:46
  * @LastEditors: wendy 463710868@qq.com
- * @LastEditTime: 2022-11-21 09:13:04
+ * @LastEditTime: 2022-11-21 15:37:03
  * @FilePath: /react_first_wendy/src/index.js
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -54,8 +54,9 @@ import ReactDom from 'react-dom';
 // import App from './02-advanced/24-性能优化';
 // import App from './02-advanced/25-swiper同步';
 // import App from './02-advanced/26-swiper异步';
-import App from './02-advanced/27-swiper组件';
+// import App from './02-advanced/27-swiper组件';
 
+import App from './03-hooks/01-userState';
 
 
 // jxs = js + xml;
