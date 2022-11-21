@@ -1,4 +1,4 @@
-import React, { Component, useEffect, useState, useMemo} from 'react';
+import React, { useEffect, useState, useMemo} from 'react';
 import axios from 'axios';
 
 export default function App() {
@@ -31,12 +31,12 @@ export default function App() {
             placeholder='输入搜索的内容'
             type='text'
             className='input_box'
-            value={this.state.inputValue}
+            value={inputValue}
             onChange={(event) =>  setinputValue(event.target.value)}
           />
           <hr />
           {
-            getCinemaLiset().map((item) => 
+            getCinemaLiset.map((item) => 
               <dl key={item.cinemaId}>
                 <dt>{item.name}</dt>
                 <dt>{item.address}</dt>
