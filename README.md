@@ -2,7 +2,7 @@
  * @Author: wendy 463710868@qq.com
  * @Date: 2022-11-15 13:21:02
  * @LastEditors: wendy 463710868@qq.com
- * @LastEditTime: 2022-11-21 17:40:39
+ * @LastEditTime: 2022-11-21 18:02:59
  * @FilePath: /react_first_wendy/README.md
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -65,3 +65,7 @@ componentWillUnmonent：在组件的销毁之前进行清理，如：计时器�
 
 useEffect是dom完全渲染完成的时候执行，可能会出现页面抖动的情况；（推荐使用）
 useLayoutEffect是生成dom的时机，可在此修改dom，避免渲染完后再一次的修改，引起再次重绘/回流的损耗；（非必要不使用）
+
+### useCallback（记忆函数）
+
+防止因为组件重新渲染，导致方法被重新创建，起到缓存的作用，只有第二个参数变化了，错重新声明一次
