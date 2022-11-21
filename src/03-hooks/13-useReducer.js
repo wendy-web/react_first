@@ -27,13 +27,13 @@ export default function App() {
         <button onClick={() => {
             dispatch({
                 type: 'minus'
-            })
+            });
         }}>--</button>
         {state.count}
         <button onClick={() => {
             dispatch({
                 type: 'add'
-            })
+            });
         }}>++</button>
     </div>
   )

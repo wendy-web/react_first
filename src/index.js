@@ -2,7 +2,7 @@
  * @Author: wendy 463710868@qq.com
  * @Date: 2022-11-17 19:35:46
  * @LastEditors: wendy 463710868@qq.com
- * @LastEditTime: 2022-11-22 00:46:01
+ * @LastEditTime: 2022-11-22 00:54:30
  * @FilePath: /react_first_wendy/src/index.js
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -67,7 +67,9 @@ import ReactDom from 'react-dom';
 // import App from './03-hooks/10-useRef';
 // import App from './03-hooks/11-useRef保存值';
 // import App from './03-hooks/12-useContext';
-import App from './03-hooks/13-useReduce';
+// import App from './03-hooks/13-useReducer';
+import App from './03-hooks/14-useReducer2';
+
 
 
 
