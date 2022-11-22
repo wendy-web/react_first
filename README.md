@@ -73,3 +73,9 @@ useLayoutEffect是生成dom的时机，可在此修改dom，避免渲染完后�
 ## 路由的实现 - React Router
 
 npm i react-router-dom@5
+
+### 反向代理
+
+安装：
+npm install http-proxy-middleware --save
+设置代理的js文件：src/setupProxy.js
