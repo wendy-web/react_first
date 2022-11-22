@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import { Route, Redirect, NavLink } from 'react-router-dom';
 import Comingsoon from './films/Comingsoon';
 import Nowplaying from './films/Nowplaying';
-
+import style from './css/films.module.css';
+// 引入的css的style的对象
+console.log(style);
 export default class films extends Component {
   render() {
     return (
@@ -10,10 +12,10 @@ export default class films extends Component {
         <p>films --- </p>
         <ul>
           <li>
-            <NavLink to='/films/nowplaying'>正在热映</NavLink>
+            <NavLink to='/films/nowplaying' activeClassName={style.click_active}>正在热映</NavLink>
           </li>
           <li>
-          <NavLink to='/films/comingsoon'>即将上映</NavLink>
+          <NavLink to='/films/comingsoon' activeClassName={style.click_active}>即将上映</NavLink>
 
           </li>
         </ul>
