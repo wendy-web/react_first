@@ -1,12 +1,6 @@
-<!--
- * @Author: wendy 463710868@qq.com
- * @Date: 2022-11-15 13:21:02
- * @LastEditors: wendy 463710868@qq.com
- * @LastEditTime: 2022-11-22 11:41:12
- * @FilePath: /react_first_wendy/README.md
- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
--->
 # first react 学习
+
+基于卖坐app
 
 运行项目
 npm run start
