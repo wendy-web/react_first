@@ -13,10 +13,14 @@ export default function Cinemas(props) {
       console.log('缓存数据')
     }
     // 订阅
-    store.subscribe(() => {
+    const unSubscribe = store.subscribe(() => {
       // console.log(store.getState().CinemaListReducer.list, '0000=');
       setlist(store.getState().CinemaListReducer.list)
     });
+    return () => {
+      // 组件的销毁 - 取消订阅
+      unSubscribe();
+    }
   }, [])
   return (
     <div>
