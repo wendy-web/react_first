@@ -6,6 +6,11 @@ import Cinemas from '../views/cinemas';
 import Center from '../views/center';
 import NotFound from '../views/NotFound';
 import Detail from '../views/detail';
+import Login from '../views/Login';
+
+function isAuth() {
+    return localStorage.getItem('token');
+}
 export default class indexRouter extends Component {
   render() {
     return (
@@ -15,7 +20,13 @@ export default class indexRouter extends Component {
             <Switch>
                 <Route path='/films' component={Films}></Route>
                 <Route path='/cinemas' component={Cinemas}></Route>
-                <Route path='/center' component={Center}></Route>
+
+                {/* <Route path='/center' component={Center}></Route> */}
+                {/* 路由的拦截 */}
+                <Route path='/center' render={() => {
+                    return isAuth() ? <Center></Center> : <Redirect to='/login'></Redirect>
+                }}></Route>
+                <Login path='/login' component={Login}></Login>
 
                 {/* 动态路由 */}
                 {/* 路由通过location的query进行传参 路由传参一/三*/}

@@ -20,6 +20,7 @@ export default function Nowplaying(props) {
   }, []);
   const routerHistory = useHistory();
   const changPageHandle = (id) => {
+    console.log(props,'---')
     // 通过hash的更改跳转
     // window.location.href = '#/detail' + id;
 
