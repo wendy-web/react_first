@@ -5,7 +5,6 @@ import { useHistory } from 'react-router-dom';
 export default function Nowplaying(props) {
   const [list, setlist] = useState([]);
   useEffect(() => {
-    console.log('00');
     // 访问电影的接口
     axios({
       url: 'https://m.maizuo.com/gateway?cityId=440300&pageNum=1&pageSize=10&type=1&k=3293746',
@@ -26,9 +25,24 @@ export default function Nowplaying(props) {
 
     // 该组件是路由组件，props中存在router中组件包裹的方法；具备history的更改方法
     // props.history.push(`/detail/${id}`);
-
+    // 路由传参一： query传参
+    // props.history.push({
+    //   pathname: '/detail',
+    //   query: {
+    //     id: id
+    //   }
+    // })
+    // 路由传参二：动态路由
     // router提供useHistory的方法
     routerHistory.push(`/detail/${id}`);
+
+    // 路由传参三： state传参
+    // props.history.push({
+    //   pathname: '/detail',
+    //   state: {
+    //     myid: id
+    //   }
+    // })
   }
   return (
     <div>

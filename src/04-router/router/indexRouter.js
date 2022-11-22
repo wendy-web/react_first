@@ -5,6 +5,7 @@ import Films from '../views/films';
 import Cinemas from '../views/cinemas';
 import Center from '../views/center';
 import NotFound from '../views/NotFound';
+import Detail from '../views/detail';
 export default class indexRouter extends Component {
   render() {
     return (
@@ -15,6 +16,15 @@ export default class indexRouter extends Component {
                 <Route path='/films' component={Films}></Route>
                 <Route path='/cinemas' component={Cinemas}></Route>
                 <Route path='/center' component={Center}></Route>
+
+                {/* 动态路由 */}
+                {/* 路由通过location的query进行传参 路由传参一/三*/}
+                {/* <Route path='/detail' component={Detail}></Route> */}
+
+                {/* 路由传参二 需要搭配一起使用 */}
+                <Route path='/detail/:myid' component={Detail}></Route>
+
+
                 
                 {/* 重定向的默认的路由 - 模糊匹配 */}
                 {/* exact 关键字是精确匹配 */}
