@@ -9,6 +9,7 @@ export default class indexRouter extends Component {
   render() {
     return (
         <HashRouter>
+            {this.props.children}
             {/* 相当于switch的匹配，匹配上就跳出 */}
             <Switch>
                 <Route path='/films' component={Films}></Route>
