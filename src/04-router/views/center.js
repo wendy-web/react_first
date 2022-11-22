@@ -1,6 +1,7 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 
-export default function center(props) {
+function center(props) {
   return (
     <div>
       center
@@ -11,3 +12,5 @@ export default function center(props) {
     </div>
   )
 }
+
+export default withRouter(center)
