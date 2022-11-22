@@ -11,6 +11,8 @@ export default function Login(props) {
         <button onClick={() => {
             localStorage.setItem('token', 'wendy');
             routerHistory.push('center');
+
+            // 直接render的渲染，所以不具备有
             // props.history.push('/Center');
         }}>login</button>
     </div>

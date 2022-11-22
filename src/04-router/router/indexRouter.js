@@ -27,8 +27,8 @@ export default class indexRouter extends Component {
 
                 {/* <Route path='/center' component={Center}></Route> */}
                 {/* 路由的拦截 */}
-                <Route path='/center' render={() => {
-                    return isAuth() ? <Center></Center> : <Redirect to='/login'></Redirect>
+                <Route path='/center' render={(props) => {
+                    return isAuth() ? <Center {...props}></Center> : <Redirect to='/login'></Redirect>
                 }}></Route>
                 <Login path='/login' component={Login}></Login>
 
