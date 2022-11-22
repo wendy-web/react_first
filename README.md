@@ -79,3 +79,11 @@ npm i react-router-dom@5
 安装：
 npm install http-proxy-middleware --save
 设置代理的js文件：src/setupProxy.js
+
+## redux的使用 - 单项数据流的形式
+
+Flex是一种架构思想，专门解决软件的结构问题，它跟MVC架构是一类东西，但是更加简单和清晰，Flux存在多种实现（至少15种）;redux是其中的一种
+
+### 安装redux
+
+npm i redux
