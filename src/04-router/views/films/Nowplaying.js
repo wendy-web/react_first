@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
-import { useHistory } from 'react-router-dom';
+import { useHistory, withRouter } from 'react-router-dom';
 
 export default function Nowplaying(props) {
   const [list, setlist] = useState([]);
@@ -49,12 +49,20 @@ export default function Nowplaying(props) {
     <div>
       <p>Nowplaying</p>
       {list.map((item) => {
-        return <li key={item.cinemaId} onClick={() => {
-          changPageHandle(item.cinemaId);
-        }}>
+        return <WithDilmItem key={item.cinemaId} {...item}>
           {item.name}
-        </li>
+        </WithDilmItem>
       })}
     </div>
   )
 }
+function FilmItem(props) {
+  const {name, cinemaId} = props;
+  return <li onClick={() => {
+    props.history.push(`/detail/${cinemaId}`)
+  }}>
+    {name}
+  </li>
+}
+// 采用withRouter；为了获取到props中传递的方法；相当于嵌套router的组件
+const WithDilmItem = withRouter(FilmItem);
