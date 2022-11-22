@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
-import { HashRouter, Redirect, Route, Switch } from 'react-router-dom';
+// hash路由的模式 带#
+// import { HashRouter as Router, Redirect, Route, Switch } from 'react-router-dom';
+
+// history路由模式，不带#；需要后端发请求index.html的地址，否则会报404页面
+import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-dom';
 
 import Films from '../views/films';
 import Cinemas from '../views/cinemas';
@@ -14,7 +18,7 @@ function isAuth() {
 export default class indexRouter extends Component {
   render() {
     return (
-        <HashRouter>
+        <Router>
             {this.props.children}
             {/* 相当于switch的匹配，匹配上就跳出 */}
             <Switch>
@@ -44,7 +48,7 @@ export default class indexRouter extends Component {
                 {/* 404 not found */}
                 <Route component={NotFound}></Route>
             </Switch>
-        </HashRouter>
+        </Router>
     )
   }
 }
