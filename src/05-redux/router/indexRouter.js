@@ -11,6 +11,7 @@ import Center from '../views/center';
 import NotFound from '../views/NotFound';
 import Detail from '../views/detail';
 import Login from '../views/Login';
+import City from '../views/City';
 
 function isAuth() {
     return localStorage.getItem('token');
@@ -24,6 +25,7 @@ export default class indexRouter extends Component {
             <Switch>
                 <Route path='/films' component={Films}></Route>
                 <Route path='/cinemas' component={Cinemas}></Route>
+                <Route path='/city' component={City}></Route>
 
                 {/* <Route path='/center' component={Center}></Route> */}
                 {/* 路由的拦截 */}

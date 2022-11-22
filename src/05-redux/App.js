@@ -6,14 +6,14 @@ import store from "../05-redux/redux/store";
 
 export default class App extends Component {
   state = {
-    isShow: store.getState()
+    isShow: store.getState().TabbarReducer.show
   }
   componentDidMount() {
     // store.subscribe的订阅
     store.subscribe((value) => {
         console.log('订阅先', store.getState());
         this.setState({
-          isShow: store.getState().show
+          isShow: store.getState().TabbarReducer.show
         })
     });
   }

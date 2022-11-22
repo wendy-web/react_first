@@ -87,3 +87,9 @@ Flex是一种架构思想，专门解决软件的结构问题，它跟MVC架构�
 ### 安装redux
 
 npm i redux
+
+1. redux介绍及设计和使用的三大原则
+
+- state以单一对象存储store对象中
+- state只读（每次返回一个新的对象）
+- 使用纯函数redux执行state更新
