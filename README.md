@@ -93,3 +93,7 @@ npm i redux
 - state以单一对象存储store对象中
 - state只读（每次返回一个新的对象）
 - 使用纯函数redux执行state更新
+
+### redux-thunk
+
+npm i redux-thunk
