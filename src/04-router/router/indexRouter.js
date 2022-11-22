@@ -16,8 +16,8 @@ export default class indexRouter extends Component {
                 <Route path='/center' component={Center}></Route>
                 
                 {/* 重定向的默认的路由 - 模糊匹配 */}
-                {/* exact关键字是精确匹配 */}
-                <Redirect from='/' to='center' exact></Redirect>
+                {/* exact 关键字是精确匹配 */}
+                <Redirect from='/' to='/films' exact></Redirect>
 
                 {/* 404 not found */}
                 <Route component={NotFound}></Route>
