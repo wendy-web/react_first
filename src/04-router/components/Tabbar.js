@@ -5,7 +5,7 @@ import style from './tabbar.module.css';
 export default class Tabbar extends Component {
   render() {
     return (
-      <div>
+      <div className={style.tabbar}>
         <ul>
             <li>
                 {/* <a href='#/films'>电影</a> */}

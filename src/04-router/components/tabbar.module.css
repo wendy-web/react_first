@@ -1,3 +1,24 @@
+.tabbar {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: gray;
+    text-align: center;
+}
+
+.tabbar ul {
+    display: flex;
+}
+.tabbar ul li {
+    flex: 1;
+}
+.tabbar ul li a {
+    display: block;
+}
 .click_active {
-    color: red;
+    background-color: #000;
+    color: #fff;
 }
