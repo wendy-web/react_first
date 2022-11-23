@@ -3,11 +3,7 @@ import MRouter from "./router/indexRouter";
 import Tabbar from "./components/Tabbar";
 import "./App.css";
 import {connect} from 'react-redux';
-
 class App extends Component {
-  componentDidMount() {
-    console.log(this.props);
-  }
   render() {
     return (
       <div>

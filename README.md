@@ -140,3 +140,5 @@ import {Map} from 'immutable';
 2. 可用于redux中的状态更改，return回原本的对象
 
 ## Mobx状态管理工具
+
+安装使用： npm i mobx@5
