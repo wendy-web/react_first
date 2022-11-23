@@ -97,3 +97,10 @@ npm i redux
 ### redux-thunk
 
 npm i redux-thunk
+
+npm i redux-promise
+
+### 开发者工具
+
+redux devTools
+安装完插件，还需要进行项目的配置
