@@ -112,7 +112,7 @@ npm i react-redux
 1. connent是HOC的高阶组件
 2. Provider组件，可以让容器组件拿到state，使用context
 
-## HOC高阶组件
+### HOC高阶组件
 
 HOC不仅仅是一个方法，确切来说应该是一个组件工厂，获取底组件，生成高阶组件
 
@@ -120,6 +120,12 @@ HOC不仅仅是一个方法，确切来说应该是一个组件工厂，获取�
 - 增删改props
 - 渲染劫持
 
-## redux-persist数据的持久化
+### redux-persist数据的持久化
 
 npm i redux-persist
+
+## ant Design的UI组件库
+
+### 安装组件
+
+npm i antd

@@ -69,7 +69,10 @@ import {store, persistor} from "../src/06-react-redux/redux/store";
 
 // import App from './04-router/App';
 // import App from './05-redux/App';
-import App from './06-react-redux/App';
+// import App from './06-react-redux/App';
+
+// 07-antd
+import App from './07-antd/01-antd引入';
 
 
 // jxs = js + xml;
@@ -99,10 +102,16 @@ import {
 import { PersistGate } from 'redux-persist/integration/react';
 const container = document.getElementById('root');
 const root = createRoot(container);
+// 06-redux的配置
+// root.render(
+//     <Provider store={store}>
+//         <PersistGate loading={null} persistor={persistor}>
+//             <App/>
+//         </PersistGate>
+//     </Provider>
+// );
+
+// 07-antd的引入使用
 root.render(
-    <Provider store={store}>
-        <PersistGate loading={null} persistor={persistor}>
-            <App/>
-        </PersistGate>
-    </Provider>
+    <App/>
 );
