@@ -4,20 +4,35 @@ import {observable, configure, action} from 'mobx';
 configure({
     enforceActions: 'always'
 })
-const store = observable({
-    list: [],
-    cityName: 'biejing',
-    show: true,
-    changeShow(){
+// const store = observable({
+//     list: [],
+//     cityName: 'biejing',
+//     show: true,
+//     changeShow(){
+//         this.show = true;
+//     },
+//     changeHide() {
+//         this.show = false;
+//     }
+// }, {
+//     // 标记俩个方法是action，专门修改可观测的value
+//     changeHide:action,
+//     changeShow:action
+// });
+// export default store;
+
+
+// 面向对象的
+class store {
+    @observable show = true;
+    @observable list = [];
+    @observable cityName = 'beijing';
+
+    @action changeShow() {
         this.show = true;
-    },
-    changeHide() {
+    }
+    @action changeHide() {
         this.show = false;
     }
-}, {
-    // 标记俩个方法是action，专门修改可观测的value
-    changeHide:action,
-    changeShow:action
-})
-
-export default store;
+}
+export default new store();

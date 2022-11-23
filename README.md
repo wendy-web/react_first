@@ -142,3 +142,11 @@ import {Map} from 'immutable';
 ## Mobx状态管理工具
 
 安装使用： npm i mobx@5
+
+### 配置严格模式
+
+需要安装装饰器
+
+- npm i @babel/core @babel/plugin-proposal-decorators @babel/preset-env
+
+- npm i customize-cra react-app-rewired
