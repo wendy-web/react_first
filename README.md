@@ -119,3 +119,7 @@ HOC不仅仅是一个方法，确切来说应该是一个组件工厂，获取�
 - 代码复用，代码模块化
 - 增删改props
 - 渲染劫持
+
+## redux-persist数据的持久化
+
+npm i redux-persist

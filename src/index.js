@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 import { Provider } from "react-redux";
-import store from "../src/06-react-redux/redux/store";
+import {store, persistor} from "../src/06-react-redux/redux/store";
 
 
 
@@ -96,10 +96,13 @@ import App from './06-react-redux/App';
 import {
     createRoot
 } from 'react-dom/client';
+import { PersistGate } from 'redux-persist/integration/react';
 const container = document.getElementById('root');
 const root = createRoot(container);
 root.render(
     <Provider store={store}>
-        <App/>
+        <PersistGate loading={null} persistor={persistor}>
+            <App/>
+        </PersistGate>
     </Provider>
 );
