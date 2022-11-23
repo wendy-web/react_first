@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import store from '../redux/store';
-import getCnimaListAction from '../redux/actionCreator.js/getCnimaListAction';
+import getCnimaListAction from '../redux/actionCreator/getCnimaListAction';
 export default function Cinemas(props) {
   const [list, setlist] = useState(store.getState().CinemaListReducer.list);
   const [cityName] =  useState(store.getState().CityReducer.cityName);

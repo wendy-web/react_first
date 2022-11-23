@@ -19,12 +19,14 @@ class App extends Component {
     );
   }
 }
-const mapStateToProps = (state) => {
+// const mapStateToProps = {
+  
+// }
+// mapStateToProps,
+//   mapDispatchToProps
+// connect(将来给孩子的属性， 将来给孩子传的回调函数)
+export default connect((state) => {
   return {
     isShow: state.TabbarReducer.show
   }
-};
-const mapDispatchToProps = null;
-// connect(将来给孩子的属性， 将来给孩子传的回调函数)
-// 将定义的参数进行传递
-export default connect(mapStateToProps,mapDispatchToProps)(App);
+})(App);

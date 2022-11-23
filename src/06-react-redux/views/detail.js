@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { hide, show } from "../redux/actionCreator.js/TabbarActionCreator";
+import { hide, show } from "../redux/actionCreator/TabbarActionCreator";
 // import store from "../redux/store";
 import { connect } from "react-redux";
 function Detail(props) {
