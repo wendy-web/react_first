@@ -108,3 +108,14 @@ redux devTools
 ## react-redux的使用
 
 npm i react-redux
+
+1. connent是HOC的高阶组件
+2. Provider组件，可以让容器组件拿到state，使用context
+
+## HOC高阶组件
+
+HOC不仅仅是一个方法，确切来说应该是一个组件工厂，获取底组件，生成高阶组件
+
+- 代码复用，代码模块化
+- 增删改props
+- 渲染劫持

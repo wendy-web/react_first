@@ -1,9 +1,17 @@
+/*
+ * @Author: wendy 463710868@qq.com
+ * @Date: 2022-11-23 08:51:37
+ * @LastEditors: wendy 463710868@qq.com
+ * @LastEditTime: 2022-11-23 14:30:36
+ * @FilePath: /react_first_wendy/src/06-react-redux/router/indexRouter.js
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ */
 import React, { Component } from 'react';
 // hash路由的模式 带#
-// import { HashRouter as Router, Redirect, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Redirect, Route, Switch } from 'react-router-dom';
 
 // history路由模式，不带#；需要后端发请求index.html的地址，否则会报404页面
-import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-dom';
+// import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-dom';
 
 import Films from '../views/films';
 import Cinemas from '../views/cinemas';
