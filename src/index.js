@@ -72,7 +72,9 @@ import {store, persistor} from "../src/06-react-redux/redux/store";
 // import App from './06-react-redux/App';
 
 // 07-antd
-import App from './07-antd/01-antd引入';
+// import App from './07-antd/01-antd引入';
+import App from './07-antd/02-栅格';
+
 
 
 // jxs = js + xml;
