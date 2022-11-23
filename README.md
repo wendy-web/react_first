@@ -129,3 +129,14 @@ npm i redux-persist
 ### 安装组件
 
 npm i antd
+
+## immutable的安装使用
+
+npm i immutable
+
+import {Map} from 'immutable';
+
+1. 用于在shouldComponentUpdate的性能优化中判断
+2. 可用于redux中的状态更改，return回原本的对象
+
+## Mobx状态管理工具
