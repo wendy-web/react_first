@@ -104,3 +104,7 @@ npm i redux-promise
 
 redux devTools
 安装完插件，还需要进行项目的配置
+
+## react-redux的使用
+
+npm i react-redux

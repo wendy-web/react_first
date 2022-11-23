@@ -1,13 +1,9 @@
-/*
- * @Author: wendy 463710868@qq.com
- * @Date: 2022-11-17 19:35:46
- * @LastEditors: wendy 463710868@qq.com
- * @LastEditTime: 2022-11-22 18:00:38
- * @FilePath: /react_first_wendy/src/index.js
- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
- */
 import React from 'react';
 import ReactDom from 'react-dom';
+import { Provider } from "react-redux";
+import store from "../src/06-react-redux/redux/store";
+
+
 
 // 导入的组件是首字母大写的形式 - react会识别是其组件，而非本事的组件
 // import App from './01-base/01-class组件.js'; // 引用导用的类
@@ -72,7 +68,8 @@ import ReactDom from 'react-dom';
 // import App from './03-hooks/16-自定义hook';
 
 // import App from './04-router/App';
-import App from './05-redux/App';
+// import App from './05-redux/App';
+import App from './06-react-redux/App';
 
 
 // jxs = js + xml;
@@ -94,11 +91,15 @@ import App from './05-redux/App';
 //     document.getElementById('root')
 // );
 
-
+// Provider是redux提供的整体订阅/取消订阅的组件
 //渲染App到页面
 import {
     createRoot
 } from 'react-dom/client';
 const container = document.getElementById('root');
 const root = createRoot(container);
-root.render( <App/> );
+root.render(
+    <Provider store={store}>
+        <App/>
+    </Provider>
+);
