@@ -12,6 +12,7 @@ import NotFound from '../views/NotFound';
 import Detail from '../views/detail';
 import Login from '../views/Login';
 import City from '../views/City';
+import Search from '../views/Search';
 
 function isAuth() {
     return localStorage.getItem('token');
@@ -24,7 +25,9 @@ export default class indexRouter extends Component {
             {/* 相当于switch的匹配，匹配上就跳出 */}
             <Switch>
                 <Route path='/films' component={Films}></Route>
-                <Route path='/cinemas' component={Cinemas}></Route>
+                <Route path='/cinemas' component={Cinemas} exact></Route>
+                <Route path='/cinemas/search' component={Search}></Route>
+
                 <Route path='/city' component={City}></Route>
 
                 {/* <Route path='/center' component={Center}></Route> */}

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
 import store from '../redux/store';
 import getCnimaListAction from '../redux/actionCreator.js/getCnimaListAction';
 export default function Cinemas(props) {
@@ -24,9 +24,14 @@ export default function Cinemas(props) {
   }, [])
   return (
     <div>
-      <p onClick={() => {
-        props.history.push('city');
-      }}>点击进入cinemas的城市：{cityName}</p>
+      <div>
+        <p onClick={() => {
+          props.history.push('city');
+        }}>点击进入cinemas的城市：{cityName}</p>
+        <button onClick={() => {
+          props.history.push('/cinemas/search')
+        }}>搜索</button>
+      </div>
       <hr />
       <ul>
         {list.map((item) => {
