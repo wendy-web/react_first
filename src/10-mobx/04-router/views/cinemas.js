@@ -1,21 +1,21 @@
 import { autorun } from 'mobx';
+import { Observer } from 'mobx-react';
 import React, { useEffect, useState } from 'react';
 import store from '../mobx/store';
 function Cinemas(props) {
-  const [list, setlist] = useState([]);
-  console.log(list)
+  // const [list, setlist] = useState([]);
   useEffect(() => {
     if(store.list.length === 0) {
       store.getList();
     }
     // 监听list的更改
-    const unsubscribe = autorun(() => {
-      console.log(store.list);
-      setlist(store.list)
-    });
+    // const unsubscribe = autorun(() => {
+    //   console.log(store.list);
+    //   setlist(store.list)
+    // });
     return() => {
       // 销毁时取消订阅
-      unsubscribe();
+      // unsubscribe();
     }
   }, [])
   return (
@@ -30,9 +30,15 @@ function Cinemas(props) {
       </div>
       <hr />
       <ul>
-        {list.map((item) => {
-          return <li key={item.cinemaId}>{item.cinemaId}-{item.name}</li>
-        })}
+        <Observer>
+          {
+            () => {
+              return store.list.map((item) => {
+                return <li key={item.cinemaId}>{item.cinemaId}-{item.name}</li>
+              })
+            }
+          }
+        </Observer>
       </ul>
     </div>
   )

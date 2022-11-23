@@ -150,3 +150,8 @@ import {Map} from 'immutable';
 - npm i @babel/core @babel/plugin-proposal-decorators @babel/preset-env
 
 - npm i customize-cra react-app-rewired
+
+## react-mobx
+
+- npm install mobx-react
+
