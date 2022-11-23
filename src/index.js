@@ -1,9 +1,7 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 import { Provider } from "react-redux";
-import {store, persistor} from "../src/06-react-redux/redux/store";
-
-
+import {store, persistor} from "../src/08-antd-mobile/redux/store";
 
 // 导入的组件是首字母大写的形式 - react会识别是其组件，而非本事的组件
 // import App from './01-base/01-class组件.js'; // 引用导用的类
@@ -73,7 +71,11 @@ import {store, persistor} from "../src/06-react-redux/redux/store";
 
 // 07-antd
 // import App from './07-antd/01-antd引入';
-import App from './07-antd/02-栅格';
+// import App from './07-antd/02-栅格';
+// import App from './07-antd/03-layout';
+
+
+import App from './08-antd-mobile/App.js';
 
 
 
@@ -105,15 +107,15 @@ import { PersistGate } from 'redux-persist/integration/react';
 const container = document.getElementById('root');
 const root = createRoot(container);
 // 06-redux的配置
-// root.render(
-//     <Provider store={store}>
-//         <PersistGate loading={null} persistor={persistor}>
-//             <App/>
-//         </PersistGate>
-//     </Provider>
-// );
+root.render(
+    <Provider store={store}>
+        <PersistGate loading={null} persistor={persistor}>
+            <App/>
+        </PersistGate>
+    </Provider>
+);
 
 // 07-antd的引入使用
-root.render(
-    <App/>
-);
+// root.render(
+//     <App/>
+// );
