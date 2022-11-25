@@ -1,28 +1,7 @@
-import {take, fork, call, put} from 'redux-saga/effects';
+import {all} from 'redux-saga/effects';
+import watchSaga1 from './saga/saga1';
+import watchSaga2 from './saga/saga2';
 function *watchSaga() {
-    while(true) {
-        // take监听组件发来的action
-        yield take('get_list');
-        yield fork(getList)
-        // fork 同步的执行异步处理函数
-    }
+    yield all([watchSaga1(), watchSaga2()])
 }
-function *getList() {
-    // call函数发异步请求
-    const res = yield call(getListAction);
-    // put函数发出新的action
-    yield put({
-        type: 'change_list',
-        payload: res
-    })
-}
-
-function getListAction() {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            resolve([111,222,333])
-        }, 2000)
-    })
-}
-
 export default watchSaga;

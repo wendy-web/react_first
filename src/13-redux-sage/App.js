@@ -8,13 +8,23 @@ export default class App extends Component {
     return (
       <div>
         <button onClick={() => {
-          if(store.getState().list.length === 0) {
+          if(store.getState().list1.length === 0) {
             console.log('请求数据');
             store.dispatch({
-              type: 'get_list'
+              type: 'get_list1'
             });
           } else {
-            console.log('获取值', store.getState().list);
+            console.log('获取值', store.getState().list1);
+          }
+        }}>click- ajax异步缓存</button>
+        <button onClick={() => {
+          if(store.getState().list2.length === 0) {
+            console.log('请求数据');
+            store.dispatch({
+              type: 'get_list2'
+            });
+          } else {
+            console.log('获取值', store.getState().list2);
           }
         }}>click- ajax异步缓存</button>
       </div>
