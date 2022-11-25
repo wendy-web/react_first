@@ -1,9 +1,11 @@
 import React from 'react';
 // import App from './09-immutable/01-base';
 // import App from './09-immutable/02-map.js';
-import { Provider } from 'mobx-react';
-import App from './10-mobx/04-router/App';
-import store from './10-mobx/04-router/mobx/store';
+// import { Provider } from 'mobx-react';
+// import App from './10-mobx/04-router/App';
+// import store from './10-mobx/04-router/mobx/store';
+
+import App from './13-redux-sage/App';
 
 //渲染App到页面
 import {
@@ -12,7 +14,7 @@ import {
 const container = document.getElementById('root');
 const root = createRoot(container);
 root.render(
-    <Provider store={store}>
+    // <Provider store={store}>
         <App/>
-    </Provider>
+    // </Provider>
 );

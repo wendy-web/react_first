@@ -1,5 +1,8 @@
 # first react 学习
 
+创建项目
+
+- npx create-react-app(官方脚手架) my-app(自己定义的项目名称)
 基于卖坐app
 
 运行项目
@@ -154,4 +157,6 @@ import {Map} from 'immutable';
 ## react-mobx
 
 - npm install mobx-react
+
+## redux-sage生态的使用
 
