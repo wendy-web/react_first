@@ -158,5 +158,6 @@ import {Map} from 'immutable';
 
 - npm install mobx-react
 
-## redux-sage生态的使用
+## redux-saga生态的使用
 
+- npm i redux-saga
