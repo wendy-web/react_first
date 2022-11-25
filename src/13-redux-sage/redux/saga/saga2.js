@@ -9,18 +9,28 @@ function *watchSaga2() {
 }
 function *getList2() {
     // call函数发异步请求
-    const res = yield call(getListAction2);
+    const res1 = yield call(getListAction2_1); // 阻塞调用fn
+    const res2 = yield call(getListAction2_2, res1); // 链式调用fn
+
     // put函数发出新的action
     yield put({
         type: 'change_list2',
-        payload: res
+        payload: res2
     })
 }
 
-function getListAction2() {
+function getListAction2_1() {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             resolve([222,333])
+        }, 2000)
+    })
+}
+
+function getListAction2_2(data) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve([...data, 77, 88])
         }, 2000)
     })
 }

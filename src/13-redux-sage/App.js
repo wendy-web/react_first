@@ -26,7 +26,7 @@ export default class App extends Component {
           } else {
             console.log('获取值', store.getState().list2);
           }
-        }}>click- ajax异步缓存</button>
+        }}>click- 添加阻塞的调用fn</button>
       </div>
     )
   }
