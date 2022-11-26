@@ -8,7 +8,8 @@ import React from 'react';
 // import App from './13-redux-sage/App';
 // import App from './14-补充/portal传送门/App';
 // import App from './14-补充/懒加载/App';
-import App from './14-补充/forwarRef/App';
+// import App from './14-补充/forwarRef/App';
+import App from './14-补充/memo/App';
 
 
 //渲染App到页面
