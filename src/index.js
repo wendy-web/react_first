@@ -6,7 +6,8 @@ import React from 'react';
 // import store from './10-mobx/04-router/mobx/store';
 
 // import App from './13-redux-sage/App';
-import App from './14-补充/portal传送门/App';
+// import App from './14-补充/portal传送门/App';
+import App from './14-补充/懒加载/App';
 
 //渲染App到页面
 import {
