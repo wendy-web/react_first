@@ -161,3 +161,9 @@ import {Map} from 'immutable';
 ## redux-saga生态的使用
 
 - npm i redux-saga
+
+### 性能优化之组件的更改
+
+1. 使用SCU的方式判断属性/状态值的更改，相同则返回false不更改，否则相反；
+2. 对于class组件，使用Pure Component的形式
+3. 对于function组件，使用memo的形式

@@ -7,13 +7,12 @@ export default class App extends Component {
     state = {
         list: ['000', '111', '3333']
     }
-    componentDidMount() { 
+    componentDidMount() {
         new Swiper('.swiper', {
             // 如果需要分页器
             pagination: {
                 el: '.swiper-pagination',
             },
-            
             // 如果需要前进后退按钮
             navigation: {
                 nextEl: '.swiper-button-next',

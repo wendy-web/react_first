@@ -21,7 +21,7 @@ class Item extends Component {
     return (
       <div style={{background: 'pink'}} onClick={
         () => {
-            // console.log(this.props.detail);
+            console.log(this.props.detail);
             bus.publish(this.props.detail)
         }
       }>

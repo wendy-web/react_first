@@ -14,7 +14,6 @@ export default class App extends Component {
   componentDidUpdate(prevProps, prevState){
     console.log('更新阶段，更新完成；componentDidUpdate');
   }
-  
   render() {
     console.log('render')
     return (

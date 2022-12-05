@@ -47,7 +47,7 @@ export default function App() {
           />
           <hr />
           {
-            getCinemaLiset.map((item) => 
+            getCinemaLiset.map((item) =>
               <dl key={item.cinemaId}>
                 <dt>{item.name}</dt>
                 <dt>{item.address}</dt>

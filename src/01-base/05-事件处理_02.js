@@ -18,7 +18,7 @@ export default class App extends Component {
 
         <p>this的指向需要bind()去更改this的指向</p>
         <button onClick={ this.handleClik1.bind(this)}>
-          button的事件 - 方式二：调用方法 - 
+          button的事件 - 方式二：调用方法 -
         </button>
         <br />
 

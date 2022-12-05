@@ -26,7 +26,7 @@ export default function App() {
       <ul>
         {list.map((item, index) => (
           <li key={index}>
-            {item} -- 
+            {item} --
             <button onClick={() => {
                 delHandle(index)
             }}>delect</button>

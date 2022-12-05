@@ -14,9 +14,9 @@ export default class App extends Component {
       <div>
         <p>变量与逻辑代码的引用 - 单花括号的使用</p>
         {name}
-         - 
+         -
         {isShow ? 'show' : 'hidden' }
-         - 
+         -
         {10 + 30}
         <div style={styleObj}>style的使用 color的设置 --- fontSize的驼峰式</div>
         <div className='classStyle'>

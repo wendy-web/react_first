@@ -39,8 +39,6 @@ export default class indexRouter extends Component {
                 {/* 路由传参二 需要搭配一起使用 */}
                 <Route path='/detail/:myid' component={Detail}></Route>
 
-
-                
                 {/* 重定向的默认的路由 - 模糊匹配 */}
                 {/* exact 关键字是精确匹配 */}
                 <Redirect from='/' to='/films' exact></Redirect>

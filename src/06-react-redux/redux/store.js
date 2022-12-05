@@ -14,14 +14,12 @@ const reducer = combineReducers({
     CinemaListReducer
 });
 
-
 //在localStorge中生成key为root的值
 const persistConfig = {
     key: 'wendy',
     storage,
     whitelist:['CityReducer'], // 持久化的数据
 }
-  
 const myPersistReducer = persistReducer(persistConfig, reducer);
 
 

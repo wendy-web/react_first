@@ -13,7 +13,6 @@ export default class App extends Component {
         list: ['999','000','200']
       })
     }, 0)
-    
    }
   render() {
     return (

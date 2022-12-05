@@ -25,10 +25,4 @@ export default class App extends Component {
       </div>
     );
   }
-  handleClick3 = (event) => {
-    console.log('事件的判定root,模拟的数据对象' ,event);
-    console.log('事件的判定root，真正的数据对象' ,event.target);
-
-    
-  }
 }

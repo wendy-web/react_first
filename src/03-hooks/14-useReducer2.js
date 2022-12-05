@@ -41,7 +41,7 @@ export default function App() {
 function Child1() {
     const {dispatch} = useContext(GlobalContext);
     return <div>
-        child1 --- 
+        child1 ---
         <button onClick={() => {
             dispatch({
                 type: 'changeA',

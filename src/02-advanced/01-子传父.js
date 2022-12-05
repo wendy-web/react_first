@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 class Navbar extends Component {
     render() {
       return (
@@ -23,7 +23,6 @@ class Sidebar extends Component {
         )
     }
 }
-  
 export default class App extends Component {
     state= {
         isShow: false

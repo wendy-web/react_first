@@ -29,7 +29,7 @@ export default class App extends Component {
       </div>
     );
   }
-  handleClik() { 
+  handleClik() {
     console.log("绑定事件的处理");
   }
   handleClik2 = () => {

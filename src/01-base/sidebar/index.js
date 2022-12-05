@@ -4,7 +4,7 @@ export default function Sidebar(props) {
     const { bgClor } = props
   return (
     <div>
-        Sidebar - 
+        Sidebar -
         <p style={{background: bgClor }}>props传递过来的值</p>
     </div>
   )

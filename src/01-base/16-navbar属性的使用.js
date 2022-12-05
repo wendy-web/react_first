@@ -13,8 +13,6 @@ export default class App extends Component {
         <hr />
         <Navbar rightShow={true}></Navbar>
         <Navbar { ...{title:"object的解析",rightShow:true}}></Navbar>
-
-
       </div>
     )
   }

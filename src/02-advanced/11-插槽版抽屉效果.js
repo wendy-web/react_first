@@ -20,7 +20,6 @@ class Sidebar extends Component {
         )
     }
 }
-  
 export default class App extends Component {
     state= {
         isShow: false

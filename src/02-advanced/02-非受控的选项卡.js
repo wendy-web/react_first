@@ -47,7 +47,7 @@ export default class App extends Component {
                 return <Cinema></Cinema>;
             case 2:
                 return <Center></Center>;
-            default: 
+            default:
                 return null;
         }
     }

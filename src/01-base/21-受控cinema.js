@@ -46,7 +46,7 @@ export default class cinema extends Component {
         />
         <hr />
         {
-          this.getCinemaLiset().map((item) => 
+          this.getCinemaLiset().map((item) =>
             <dl key={item.cinemaId}>
               <dt>{item.name}</dt>
               <dt>{item.address}</dt>

@@ -37,7 +37,7 @@ export default class App extends Component {
                         this.state.todoList.map((item, index) => {
                             return (
                             <li key={item.id}>
-                                <input 
+                                <input
                                     type='checkbox'
                                     checked={item.checked}
                                     onChange={() => {
@@ -79,7 +79,7 @@ export default class App extends Component {
         // 不要直接修改state的值
         // 可使用数组的解析[...], 或者使用slice()
         const todoList = [
-            ...this.state.todoList, 
+            ...this.state.todoList,
             {
                 id: Math.random()*1000,
                 text: this.state.inputValue,

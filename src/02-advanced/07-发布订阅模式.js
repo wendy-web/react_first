@@ -1,5 +1,4 @@
-import React, { Component } from 'react'
-
+import React, { Component } from 'react';
 export default class App extends Component {
   render() {
     return (
@@ -30,4 +29,4 @@ bus.subscribe(() => {
 })
 bus.subscribe(() => {
     console.log('111')
-})
+});

@@ -25,7 +25,6 @@ export default class App extends Component {
                 this.state.type === 1 ? <Nowplaying></Nowplaying> : <Comingsoon></Comingsoon>
             }
         </Suspense>
-        
       </div>
     );
   }
